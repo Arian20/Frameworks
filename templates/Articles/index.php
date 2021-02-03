@@ -65,11 +65,11 @@
     <tr>
         <td>
             <?= $this->Html->link($article->title, ['action' => 'view', $article->slug]) ?>
-            
+
         </td>
 <td>
             <!-- <?=$this->Html->image($article->image) ?> -->
-            <img src="<?= $row['image']; ?>" class="card-img-top">
+
         </td>
         <td>
             <?= $this->Html->link('Ändern', ['action' => 'edit', $article->slug]) ?>
