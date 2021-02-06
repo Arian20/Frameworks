@@ -30,7 +30,5 @@ $routes->scope('/', function (RouteBuilder $builder) {
  //  ]));
   // $builder->applyMiddleware('csrf');
    $builder->connect('/pages',['controller'=>'Pages','action'=>'display', 'home']);
-   $builder->connect('locale',
-      ['controller'=>'Localizations','action'=>'index']);
    $builder->fallbacks();
 });

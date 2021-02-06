@@ -21,18 +21,68 @@ msgstr "Contact"
 
 #: /Articles/add.php:9
 #: /Articles/edit.php:8
+msgid "Schauen Sie jetzt nach ihrem gewünschtem Hashtag!"
+msgstr "Show me my preferred tags"
 
+msgid "Tags anzeigen"
+msgstr "Show tags"
 
+msgid "Filtern!"
+msgstr "filtering"
+
+msgid "Filtern Sie die Rezepte nach Namen oder Zutaten!"
+msgstr "Filter the recipes by name or ingredients!"
+
+msgid "Bild"
+msgstr "Image"
 
 msgid "Rezept speichern"
 msgstr "Save Recipe"
 
+msgid "Rezept hinzufügen"
+msgstr "Add recipe"
 
+msgid "Rezeptnamen"
+msgstr "Recipes"
 
+msgid "Haben Sie auch Rezepte, die Sie mit der Community teilen wollen? Dann legen Sie jetzt los!"
+msgstr "Do you also have recipes that you want to share with the community? Then get started now!"
 
 msgid "Werden Sie ein Teil unserer 0- Waste Community und verwenden Sie auch noch übrig gebliebene Zutaten und Lebensmittel bevor Sie sie vergwerfen!"
 msgstr "Be a part of our new 0- Waste Community and use your remaining foods before throwing away! "
 
+msgid  "Auf LinkedIn teilen"
+msgstr "Share on LinkedIn"
+
+msgid "Auf Twitter teilen"
+msgstr "Share on Twitter"
+
+msgid "Auf Facebook teilen"
+msgstr "Share on Facebook"
+
+msgid "Möchten Sie ihr Rezept ändern?"
+msgstr "Do you want to change your recipe?"
+
+msgid "Teilen Sie jetzt ihre Rezept mit ihren Freunden!"
+msgstr "Wanna share this recipe with your friends!?"
+
+msgid "Nicht alles zuhause? Kein Problem! Checken Sie ihre Umgebung nach Supermärkten!"
+msgstr "Missing ingredients?! No problem, check your surroundings for grocery stores!"
+
+msgid "Geben Sie ihre Stadt ein!"
+msgstr "Enter your city!"
+
+msgid "Los geht´s"
+msgstr "Let's go"
+
+msgid "Ändern!"
+msgstr "Change!"
+
+msgid "Du bist der "
+msgstr "You are the "
+
+msgid " . Snacker dieses Rezepts!"
+msgstr " . Snacker of this recipe!"
 #: /Tags/add.php:10
 #: /Tags/edit.php:10
 #: /Tags/index.php:18

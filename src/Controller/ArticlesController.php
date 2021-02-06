@@ -23,7 +23,11 @@ class ArticlesController extends AppController
     public function index()
     {
 
+     if($this->request->is('post')) {
+                $locale = $this->request->getData('locale');
+                I18n::setLocale($locale);
 
+             }
 
     $key = $this->request->getQuery('key');
             if($key){
@@ -59,6 +63,11 @@ class ArticlesController extends AppController
 
    public function view($slug = null)
    {
+    if($this->request->is('post')) {
+               $locale = $this->request->getData('locale');
+               I18n::setLocale($locale);
+
+            }
 
        $article = $this->Articles
            ->findBySlug($slug)
@@ -67,28 +76,23 @@ class ArticlesController extends AppController
        $this->set(compact('article'));
        $this->Authorization->skipAuthorization();
 
+
     }
 
      public function add()
        {
 
-        
+
            $article = $this->Articles->newEmptyEntity();
 
            $this->Authorization->authorize($article);
            if ($this->request->is('post')) {
                $article = $this->Articles->patchEntity($article, $this->request->getData());
-              
+
 
                // Hardcoding the user_id is temporary, and will be removed later
                // when we build authentication out.
                $article->user_id = $this->request->getAttribute('identity')->getIdentifier();
-
-
-
-
-
-
 
                  if(!$article->getErrors){
                               $image = $this->request->getData('image_file');
@@ -106,20 +110,6 @@ class ArticlesController extends AppController
                               $article->image = 'article-img/'.$name;
 
                           }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
                if ($this->Articles->save($article)) {

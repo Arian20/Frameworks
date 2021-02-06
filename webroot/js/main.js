@@ -1,4 +1,4 @@
-/* 
+/*
 
 Social Share Links:
 
@@ -19,7 +19,7 @@ https://www.linkedin.com/shareArticle?url=[post-url]&title=[post-title]
 
 */
 
-const facebookBtn = document.querySelector(".facebook-btn");
+
 const twitterBtn = document.querySelector(".twitter-btn");
 const pinterestBtn = document.querySelector(".pinterest-btn");
 const linkedinBtn = document.querySelector(".linkedin-btn");
@@ -32,10 +32,7 @@ function init() {
   let postTitle = encodeURI("Checkt unsere Website für mehr Nachhaltigkeit aus: ");
   let postImg = encodeURI(pinterestImg.src);
 
-  facebookBtn.setAttribute(
-    "href",
-    `https://www.facebook.com/sharer.php?u=${postUrl}`
-  );
+
 
   twitterBtn.setAttribute(
     "href",

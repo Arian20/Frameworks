@@ -17,7 +17,9 @@ public function home(){
          $this->Authorization->skipAuthorization();
       }
 
-
+public function analysis() {
+    $this->Authorization->skipAuthorization();
+}
 
 
 

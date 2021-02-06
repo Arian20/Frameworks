@@ -1,19 +1,65 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
+<style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {background-color:#f5f5f5;}
+// body style
+
+body               {
+  background:#9BC86A;
+  font:400 14px 'Calibri','Arial';
+  padding:20px;
+}
+
+blockquote {
+  color:white;
+  text-align:center;
+}
+body  {
+
+  background-image: url(https://cdn.discordapp.com/attachments/507112279695818754/807314680229920888/Hintergrund_holz.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+button {
+  background-image: url();
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  /* put the height and width of your image here */
+  height: 50px;
+  width: 200px;
+  border: none;
+}
+
+button span {
+  display: none;
+}
+</style>
 
 <h1><?php echo __("Rezeptliste")?></h1>
 
-<h4>Haben Sie auch Rezepte, die Sie mit der Community teilen wollen? Dann legen Sie jetzt los!</h4>
-<p><?= $this->Html->link("Rezept hinzufügen", ['action' => 'add'], ['class' => 'button', 'target' => '_self'])?></p>
+<h4><?php echo __("Haben Sie auch Rezepte, die Sie mit der Community teilen wollen? Dann legen Sie jetzt los!")?></h4>
+<p><?= $this->Html->link(( __("Rezept hinzufügen")), ['action' => 'add'], ['class' => 'button', 'target' => '_self'])?></p>
 
 
 </br>
-<h4>Schauen Sie jetzt nach ihrem gewünschtem Hashtag!</h4>
-<p><?= $this->Html->link("Tags anzeigen", '/tags/', ['class' => 'button', 'target' => '_self']) ?></p>
+<h4><?php echo __("Schauen Sie jetzt nach ihrem gewünschtem Hashtag!")?></h4>
+<p><?= $this->Html->link (( __("Tags anzeigen")), '/tags/', ['class' => 'button', 'target' => '_self']) ?></p>
 </br>
 </br>
-<h4>Filtern Sie die Rezepte nach Namen oder Zutaten!</h4>
+<h4><?php echo __("Filtern Sie die Rezepte nach Namen oder Zutaten!")?></h4>
 
 
 
@@ -28,35 +74,18 @@
 
       <?= $this->Form->control('key',['label'=>'','value'=>$this->request->getQuery('key')]) ?>
 
-      <?= $this->Form->submit('Filtern!') ?>
+      <?= $this->Form->submit ( __("Filtern!")) ?>
       <?= $this->Form->end() ?>
 
-
-
-
-
-
-
-
 </br>
 </br>
 
-
-
-
-
-<?php
-
-
-?>
 <table>
     <tr>
-        <th>Rezeptnamen</th>
-<th>Bild</th>
-        <th>Aktionen</th>
+        <th><?php echo __("Rezeptnamen")?></th>
+<th><?php echo __("Bild")?></th>
+        <th><?php echo __("Aktionen")?></th>
     </tr>
-
-
 
 <link rel="stylesheet" href="/css/tabellenview.css" />
 
@@ -72,9 +101,9 @@
 
         </td>
         <td>
-            <?= $this->Html->link('Ändern', ['action' => 'edit', $article->slug]) ?>
+            <?= $this->Html->link(__('Ändern'), ['action' => 'edit', $article->slug]) ?>
             <?= $this->Form->postLink(
-                'Löschen',
+                 __("Löschen"),
                 ['action' => 'delete', $article->slug],
                 ['confirm' => 'Bist du dir sicher?'])
             ?>
@@ -105,6 +134,23 @@ $largestNumber = $row['max'];
 echo $row['max'];
 };
 ?> -->
+
+<?php
+
+echo $this->Form->create(NULL,array());
+           echo $this->Form->radio("locale",
+              [
+                 ['value'=>'en_US','text'=>'English'],
+                 ['value'=>'de_DE','text'=>'German'],
+
+              ]
+           );
+           echo $this->Form->button('Sprache ändern');
+
+           echo $this->Form->end();
+
+?>
+
 
 
 

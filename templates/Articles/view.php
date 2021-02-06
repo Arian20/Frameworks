@@ -23,15 +23,15 @@
 
 
 
-<h6> Möchten Sie ihr Rezept ändern?</h6>
+<h6><?php echo __("Möchten Sie ihr Rezept ändern?")?></h6>
 
-<p><?= $this->Html->link('Ändern!', ['action' => 'edit', $article->slug]) ?></p>
+<p><?= $this->Html->link(( __("Ändern!")), ['action' => 'edit', $article->slug]) ?></p>
 
 
 </br>
 </br>
 
-<h4>Teilen Sie jetzt ihre Rezept mit ihren Freunden!</h4>
+<h4><?php echo __("Teilen Sie jetzt ihre Rezept mit ihren Freunden!")?></h4>
 
 
 <br />
@@ -43,8 +43,7 @@
 
 $services = [
     'facebook' => __('Auf Facebook teilen'),
-
-    'linkedin' => __('Auf LinkIn teilen'),
+    'linkedin' => __('Auf LinkedIn teilen'),
     'twitter' => __('Auf Twitter teilen')
 ];
 
@@ -64,7 +63,7 @@ echo '</ul>';
 </br>
 </br>
 
-<h3>Nicht alles zuhause? Kein Problem! Checken Sie ihre Umgebung nach Supermärkten!<h3>
+<h3><?php echo __("Nicht alles zuhause? Kein Problem! Checken Sie ihre Umgebung nach Supermärkten!")?><h3>
 
 <?= $this->Form->create() ?>
 
@@ -83,9 +82,11 @@ if (isset($_POST["submit_address"]))
 ?>
 <form method="POST">
     <p>
-        <input type="text" name="address" placeholder="Geben Sie ihre Stadt ein">
+        <input type="text" name="address" placeholder=<?php echo __("Geben Sie ihre Stadt ein!")?>>
     </p>
-    <button input type="submit" name="submit_address" value="">Los geht´s</button>
+    <button input type="submit" name="submit_address" value=""><?php echo __("Los geht´s")?></button>
+
+
 </form>
 
 
@@ -115,7 +116,7 @@ $anzahl_zugriffe = besucher($page_name);
 <footer>
     <p>
         <?php
-        echo "Du bist der ", $anzahl_zugriffe, ". Snacker dieses Rezepts!";
+        echo __("Du bist der "), $anzahl_zugriffe, __(". Snacker dieses Rezepts!");
         ?>
     </p>
 </footer>
@@ -145,4 +146,21 @@ function besucher($record) {
     return $x;
 }
 ?>
+</br>
+<?php
+
+echo $this->Form->create(NULL,array());
+           echo $this->Form->radio("locale",
+              [
+                 ['value'=>'en_US','text'=>'English'],
+                 ['value'=>'de_DE','text'=>'German'],
+
+              ]
+           );
+           echo $this->Form->button('Sprache ändern');
+
+           echo $this->Form->end();
+
+?>
+
 </footer>

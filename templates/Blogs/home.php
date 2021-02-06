@@ -79,7 +79,7 @@
       <a href="/articles/index" class="btn btn-primary btn-lg"><?php echo __('Rezeptliste')?></a>
       <!-- <a href="/users" class="btn btn-primary btn-lg"><?php echo __('Nutzerverwaltung')?></a> -->
 
- 
+
 
 
 
@@ -140,7 +140,7 @@
             <p class="card-text"><?php echo __("Der Original Pudding Vanille-Geschmack ist die älteste und beliebteste Geschmacksrichtung der Kochpuddinge.")?></p>
           </div>
           <div class="card-footer">
-            <a href="/articles/view/Vanillepudding" class="btn btn-primary"><?php echo __("Ansehen")?></a>
+            <a href="analysis" class="btn btn-primary"><?php echo __("Ansehen")?></a>
           </div>
         </div>
       </div>
@@ -189,7 +189,7 @@ fclose($fp);
 
 <?php
 
-echo $this->Form->create(NULL,array('url'=>'/blogs/home'));
+echo $this->Form->create(NULL,array());
            echo $this->Form->radio("locale",
               [
                  ['value'=>'en_US','text'=>'English'],

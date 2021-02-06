@@ -61,7 +61,7 @@ $cakeDescription = '0- Waste';
            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 
              <div class="container">
-               <a class="navbar-brand" href="#">0- Waste</a>
+               <a class="navbar-brand" href="#"><font size="5">0-Waste</font></a>
                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                  <span class="navbar-toggler-icon"></span>
                </button>
@@ -79,7 +79,7 @@ $cakeDescription = '0- Waste';
                    <li class="nav-item active">
                      <a class="nav-link" href="#"><?php echo __('Kontakt')?></a>
                    </li>
-         
+
           <!-- <?php
 session_start();
     if(!isset($_SESSION['username']))
@@ -88,7 +88,7 @@ session_start();
     }
     else {
         echo '<li class="nav-item active"><a class="nav-link" href="/blogs/logout">Logout</a></li>'; }
-        
+
 
 ?>   -->
 
@@ -98,7 +98,7 @@ session_start();
                     </li>
                     <li class="nav-item active">
                       <a class="nav-link" href="/blogs/logout">Logout</a>
-                    </li> 
+                    </li>
                  </ul>
                </div>
              </div>
@@ -130,7 +130,7 @@ session_start();
 
 
 
-    
+
 
     <main class="main">
             <div class="container">
@@ -138,14 +138,14 @@ session_start();
                 <?= $this->fetch('content') ?>
         </div>
     </main>
-    
 
 
 
-    
+
+
 <!DOCTYPE html>
 <html lang="en">
-  
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title></title>
@@ -154,12 +154,10 @@ session_start();
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
     />
-  
- 
+
+
     <div class="share-btn-container">
-      <a href="#" class="facebook-btn">
-        <i class="fab fa-facebook"></i>
-      </a>
+
 
       <a href="#" class="twitter-btn">
         <i class="fab fa-twitter"></i>
@@ -178,8 +176,8 @@ session_start();
       </a>
     </div>
 
-    <div class="content">
-      
+    <div >
+
 
     <img
         class="pinterest-img"
@@ -189,7 +187,7 @@ session_start();
     </div>
 
     <script src="/js/main.js"></script>
- 
-   
+
+
 
 </html>
