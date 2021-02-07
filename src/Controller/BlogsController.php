@@ -21,7 +21,15 @@ public function analysis() {
     $this->Authorization->skipAuthorization();
 }
 
+public function uberuns()
+    {
+        $this->Authorization->skipAuthorization();
+    }
 
+public function kontakt()
+    {
+        $this->Authorization->skipAuthorization();
+    }
 
  public function logout()
     {

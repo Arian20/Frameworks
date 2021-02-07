@@ -8,7 +8,7 @@ msgid "Sprache ändern"
 msgstr "Change Language"
 
 
-msgid "Werden Sie zusammen mit uns etwas nachaltiger!"
+msgid "Werden Sie zusammen mit uns etwas nachhaltiger!"
 msgstr "Be a bite more sustainable with us!"
 
 # LANGUAGE translation of CakePHP Application
@@ -69,8 +69,8 @@ msgstr "Wanna share this recipe with your friends!?"
 msgid "Nicht alles zuhause? Kein Problem! Checken Sie ihre Umgebung nach Supermärkten!"
 msgstr "Missing ingredients?! No problem, check your surroundings for grocery stores!"
 
-msgid "Geben Sie ihre Stadt ein!"
-msgstr "Enter your city!"
+msgid "Adresse"
+msgstr "Address"
 
 msgid "Los geht´s"
 msgstr "Let's go"
@@ -81,8 +81,8 @@ msgstr "Change!"
 msgid "Du bist der "
 msgstr "You are the "
 
-msgid " . Snacker dieses Rezepts!"
-msgstr " . Snacker of this recipe!"
+msgid " . Snacker!"
+msgstr " . Snacker!"
 #: /Tags/add.php:10
 #: /Tags/edit.php:10
 #: /Tags/index.php:18

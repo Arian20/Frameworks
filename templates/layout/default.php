@@ -74,10 +74,10 @@ $cakeDescription = '0- Waste';
                      </a>
                    </li>
                    <li class="nav-item active">
-                     <a class="nav-link" href="#"><?php echo __('Über Uns')?></a>
+                     <a class="nav-link" href="/Blogs/uberuns"><?php echo __('Über Uns')?></a>
                    </li>
                    <li class="nav-item active">
-                     <a class="nav-link" href="#"><?php echo __('Kontakt')?></a>
+                     <a class="nav-link" href="/blogs/kontakt"><?php echo __('Kontakt')?></a>
                    </li>
 
           <!-- <?php

@@ -74,9 +74,10 @@
 
     <!-- Jumbotron Header -->
     <header class="jumbotron my-4">
-      <h1 class="display-3"><?php echo __("Werden Sie zusammen mit uns etwas nachaltiger!")?></h1>
+      <h1 class="display-3"><?php echo __("Werden Sie zusammen mit uns etwas nachhaltiger!")?></h1>
       <p class="lead"><?php echo __("Werden Sie ein Teil unserer 0- Waste Community und verwenden Sie auch noch übrig gebliebene Zutaten und Lebensmittel bevor Sie sie vergwerfen!")?></p>
       <a href="/articles/index" class="btn btn-primary btn-lg"><?php echo __('Rezeptliste')?></a>
+      <a href="/blogs/analysis" class="btn btn-primary btn-lg"><?php echo __('Beliebte Rezepte')?></a>
       <!-- <a href="/users" class="btn btn-primary btn-lg"><?php echo __('Nutzerverwaltung')?></a> -->
 
 
@@ -140,7 +141,7 @@
             <p class="card-text"><?php echo __("Der Original Pudding Vanille-Geschmack ist die älteste und beliebteste Geschmacksrichtung der Kochpuddinge.")?></p>
           </div>
           <div class="card-footer">
-            <a href="analysis" class="btn btn-primary"><?php echo __("Ansehen")?></a>
+            <a href="/articles/view/Vanillepudding" class="btn btn-primary"><?php echo __("Ansehen")?></a>
           </div>
         </div>
       </div>
@@ -154,9 +155,8 @@
   <!-- Footer -->
 <footer>
 
-
-<!-- <?php
-
+ <?php
+//Funktionslos, da lokale Seite --> Aktualisierung lässt Counter steigen um zu validieren
 $filename = "count.txt";// the text file to store count
 // Open the file foe reading current count
 $fp = fopen($filename, 'r');
@@ -184,9 +184,9 @@ fwrite($fp, $count);
 //close file
 fclose($fp);
 
-?> -->
+?>
 
-
+<aside>
 <?php
 
 echo $this->Form->create(NULL,array());
@@ -205,7 +205,7 @@ echo $this->Form->create(NULL,array());
 
 
 
-
+</aside>
 </footer>
 
 

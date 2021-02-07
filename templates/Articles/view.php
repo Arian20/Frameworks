@@ -3,6 +3,7 @@
 <h1><?= h($article->title) ?></h1>
 <p><?= h($article->body ) ?></p>
 <p><?= h($article->Anleitung ) ?></p>
+</br>
 <p><b>Tags:</b> <?= h($article->tag_string) ?></p>
 
 
@@ -15,6 +16,7 @@
 <meta property="og:description" content="Checken Sie jetzt das schöne Rezept von 0- Waste aus!">
 <meta property="og:type" content="article">
 <meta property="og:image" content="https://www.moneycrashers.com/wp-content/uploads/2011/01/zero-waste-food-groceries-1068x713.jpg">
+
 
 
 
@@ -42,7 +44,7 @@
 
 
 $services = [
-    'facebook' => __('Auf Facebook teilen'),
+
     'linkedin' => __('Auf LinkedIn teilen'),
     'twitter' => __('Auf Twitter teilen')
 ];
@@ -64,39 +66,10 @@ echo '</ul>';
 </br>
 
 <h3><?php echo __("Nicht alles zuhause? Kein Problem! Checken Sie ihre Umgebung nach Supermärkten!")?><h3>
-
-<?= $this->Form->create() ?>
-
+    <a href="/articles/Standort"><button><?php echo __("Los geht´s")?></button></a>
 
 
-
-<?php
-if (isset($_POST["submit_address"]))
-{
-    $address = $_POST["address"];
-    ?>
-    <iframe width="100%" height="500" src="https://maps.google.com/maps?q=<?php
-    echo "$address Discounter";?>&output=embed"></iframe>
-    <?php
-}
-?>
-<form method="POST">
-    <p>
-        <input type="text" name="address" placeholder=<?php echo __("Geben Sie ihre Stadt ein!")?>>
-    </p>
-    <button input type="submit" name="submit_address" value=""><?php echo __("Los geht´s")?></button>
-
-
-</form>
-
-
-
-
-
-
-
-
-
+    </br>
 
 </footer>
 
@@ -116,7 +89,7 @@ $anzahl_zugriffe = besucher($page_name);
 <footer>
     <p>
         <?php
-        echo __("Du bist der "), $anzahl_zugriffe, __(". Snacker dieses Rezepts!");
+        echo __("Du bist der "), $anzahl_zugriffe, __((". Snacker!"));
         ?>
     </p>
 </footer>
@@ -147,6 +120,7 @@ function besucher($record) {
 }
 ?>
 </br>
+
 <?php
 
 echo $this->Form->create(NULL,array());
