@@ -83,7 +83,7 @@ button span {
 <table>
     <tr>
         <th><?php echo __("Rezeptnamen")?></th>
-<th><?php echo __("Bild")?></th>
+
         <th><?php echo __("Aktionen")?></th>
     </tr>
 
@@ -94,10 +94,6 @@ button span {
     <tr>
         <td>
             <?= $this->Html->link($article->title, ['action' => 'view', $article->slug]) ?>
-
-        </td>
-<td>
-            <!-- <?=$this->Html->image($article->image) ?> -->
 
         </td>
         <td>

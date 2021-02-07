@@ -41,7 +41,8 @@ class ArticlesTable extends Table
             ->minLength('body', 10)
 
             ->notEmptyString('Anleitung')
-            ->minLength('Anleitung', 10);
+            ->minLength('Anleitung', 10)
+            ->maxLength('Anleitung', 50000);
 
 
 

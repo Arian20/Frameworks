@@ -78,6 +78,11 @@ class ArticlesController extends AppController
 
 
     }
+ public function standort()
+    {
+        $this->Authorization->skipAuthorization();
+    }
+
 
      public function add()
        {
