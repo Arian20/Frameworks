@@ -28,6 +28,8 @@ $cakeDescription = '0- Waste';
           <meta name="description" content="">
           <meta name="author" content="">
 
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
 
 <!-- Bootstrap core CSS -->
           <link rel="stylesheet" href="/css/bootstrap-grid.css" />
@@ -167,9 +169,9 @@ session_start();
         <i class="fab fa-pinterest"></i>
       </a>
 
-      <!-- <a href="#" class="linkedin-btn">
+       <a href="#" class="linkedin-btn">
         <i class="fab fa-linkedin"></i>
-      </a> -->
+      </a>
 
       <a href="#" class="whatsapp-btn">
         <i class="fab fa-whatsapp"></i>
